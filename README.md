@@ -1,2 +1,4 @@
 # PrivCQ
 Implementation of the paper "PrivCQ: Trading Conditional Queries in Data Marketplaces" for KDD2022.
+
+Remark: OLHPGRR is named OLH in our paper.
