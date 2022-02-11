@@ -1,30 +1,6 @@
 import random
 import numpy as np
-"""
-我们有3个数据集，每个数据集包含3组FO，每一组有500个。
-我们有6种方法。
-我们有10种不同的query（以energy为例）：
 
-我们在一维的500个FO上、用6种不同的table(oracle)(分别做以下query：
-#1. SELECT count(*) WHERE Age = x
-2. SELECT count(*) WHERE Age in [2, 4]
-#3. SELECT sum(hpw) WHERE Age = x （有无必要？精确度应与1相同）
-4. SELECT sum(hpw) WHERE Age in [2, 4]
-
-我们在二维的500个FO上、用6种不同的table(oracle)分别做以下query：
-5. SELECT count(*) WHERE Age = x AND Education = y
-6. SELECT count(*) WHERE Age in [2,4] AND Education = [5, 8]
-7. SELECT sum(hpw) WHERE Age = x AND Education = y （同3）
-8. SELECT sum(hpw) WHERE Age in [2,4] AND Education = [5, 8]
-
-我们在三维的500个FO上、用6种不同的table(oracle)分别做以下query：
-9. SELECT sum(hpw) WHERE Age = x AND Education = y 
-10.  SELECT sum(hpw) WHERE Age in [2,4] AND Education = [5, 8]
-
-在每个数据集上，我们以6种不同的table(oracle)分别做以上10种query。
-每次的input都是相应的FO上全部的500条vector。
-range query时我们在domain里随机生成两个不同的整数，组成一个range。
-"""
 def energy_generate_random_count_dim2(filepath,dim_1_low,dim_1_high,dim_2_low,dim_2_high,num=500):
     """
     5, 7 and 9
