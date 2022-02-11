@@ -1,2 +1,2 @@
 # PrivCQ
-Implementation of the paper "PrivCQ: Trading Conditional Queries in Data Marketplaces" in KDD
+Implementation of the paper "PrivCQ: Trading Conditional Queries in Data Marketplaces" for KDD2022.
